@@ -1,0 +1,9 @@
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+playwright.config.ts
+package.json
+package-lock.json
+tests-examples
+.github
