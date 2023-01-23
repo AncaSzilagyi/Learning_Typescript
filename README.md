@@ -16,4 +16,4 @@ npx playwright codegen
 
 As you can see in playwright.config.ts file, I have added a folder in which you can place the reports after every test, in json format. In the same file you can modify which test file you want to execute.
 
-The code is written with the help of [this tutorial from LambdaTest]("https://youtu.be/wawbt1cATsk").
+The code is written with the help of [this tutorial from LambdaTest](https://youtu.be/wawbt1cATsk).
