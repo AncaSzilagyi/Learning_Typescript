@@ -3,7 +3,7 @@ import { chromium, test } from "@playwright/test"
 test("Login test demo", async () => {
 
     const browser = await chromium.launch({
-        headless: false
+        headless: false //launch browser
     });
     //chromium is a browser engine that we will run the tests with;
     const context = await browser.newContext();
@@ -19,6 +19,14 @@ test("Login test demo", async () => {
     await (await page).fill("input[name='email']", "test_elisa@gmail.com");
     await (await page).fill("input[name='password']", "testPassword123");
     await (await page).click("input[value='Login']");
+
+    const newContext = await browser.newContext();
+    await (await page).waitForTimeout(5000);
+
+    const newPage = await newContext.newPage();
+    await newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
+
+    await (await newPage).waitForTimeout(5000);
 })
 
 //test_elisa@gmail.com
