@@ -20,7 +20,7 @@
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "tests/recorded.test.ts"
+          "tests/basicinteractions.test.ts"
         ],
         "timeout": 30000
       }
@@ -39,7 +39,7 @@
       [
         "html",
         {
-          "open": "never"
+          "open": "always"
         }
       ]
     ],
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\recorded.test.ts",
-      "file": "tests/recorded.test.ts",
+      "title": "tests\\basicinteractions.test.ts",
+      "file": "tests/basicinteractions.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
+          "title": "Check first input field",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,21 +78,76 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 15557,
+                  "duration": 1626,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-23T09:56:12.760Z",
-                  "attachments": []
+                  "startTime": "2023-01-25T09:17:23.526Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-basicinteractions-Check-first-input-field\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "aeb89487b60598200775-764e062666c472cf22f2",
-          "file": "tests/recorded.test.ts",
-          "line": 3,
+          "id": "53707f89fa4936475b86-80ec8c63d42c1988e068",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Check sum - input field",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1324,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "487695\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-01-25T09:17:25.654Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-basicinteractions-Check-sum---input-field\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53707f89fa4936475b86-47726e9d3ce8df8f82c0",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 15,
           "column": 5
         }
       ]

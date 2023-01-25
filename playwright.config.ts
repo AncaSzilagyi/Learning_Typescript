@@ -2,14 +2,17 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/recorded.test.ts"],  
+  testMatch: ["tests/basicinteractions.test.ts"],  
   use: {
-    headless: false
+    headless: false,
+    screenshot: "on",
+    video: "retain-on-failure"
   },
+  retries: 0,
   reporter: [["dot"], ["json", {
     outputFile: "jsonReports/jsonReport.json"
   }], ["html", {
-    open: "never"
+    open: "always"
   }]]
 };
 
