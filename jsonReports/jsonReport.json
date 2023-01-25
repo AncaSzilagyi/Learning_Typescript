@@ -78,7 +78,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1759,
+                  "duration": 1422,
                   "errors": [],
                   "stdout": [
                     {
@@ -87,7 +87,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-25T10:14:16.798Z",
+                  "startTime": "2023-01-25T13:10:34.335Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -103,6 +103,44 @@
           "id": "d2aaa9a791b74263e238-a3aed28a130dfafa3d33",
           "file": "tests/alertsHandling.test.ts",
           "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Bootstrap Modals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-01-25T13:10:36.188Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-alertsHandling-Bootstrap-Modals\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2aaa9a791b74263e238-038dcbda100343c2bedd",
+          "file": "tests/alertsHandling.test.ts",
+          "line": 17,
           "column": 5
         }
       ]
