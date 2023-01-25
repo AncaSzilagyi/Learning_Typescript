@@ -78,12 +78,16 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1610,
+                  "duration": 1759,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Press a button!\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-25T09:58:21.107Z",
+                  "startTime": "2023-01-25T10:14:16.798Z",
                   "attachments": [
                     {
                       "name": "screenshot",
