@@ -25,7 +25,7 @@ npx playwright show-report
 - **type** = writing each letter one by one;
 - **fill** = deleting the text that is already in the field and importing the text we want to fill inside.
 
-2. For now, everytime I use the command **"npx playwright test"**, it will run all the tests that I chose to be runned from config file, in line _testMatch: ["tests/alertsHandling.test.ts"]_.
+2. For now, everytime I use the command **"npx playwright test"**, it will run all the tests that I chose to be runned from **config file**, in line _testMatch: ["tests/alertsHandling.test.ts"]_.
 
 
 The code is written with the help of [this tutorial from LambdaTest](https://youtu.be/wawbt1cATsk).
