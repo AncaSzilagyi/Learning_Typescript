@@ -78,7 +78,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1626,
+                  "duration": 1553,
                   "errors": [],
                   "stdout": [
                     {
@@ -90,7 +90,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-25T09:17:23.526Z",
+                  "startTime": "2023-01-25T09:31:20.070Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -123,7 +123,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1324,
+                  "duration": 1282,
                   "errors": [],
                   "stdout": [
                     {
@@ -132,7 +132,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-25T09:17:25.654Z",
+                  "startTime": "2023-01-25T09:31:22.089Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -148,6 +148,44 @@
           "id": "53707f89fa4936475b86-47726e9d3ce8df8f82c0",
           "file": "tests/basicinteractions.test.ts",
           "line": 15,
+          "column": 5
+        },
+        {
+          "title": "Interact with checkboxes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1087,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-01-25T09:31:23.372Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-basicinteractions-Interact-with-checkboxes\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53707f89fa4936475b86-2ac53b1a0ae141b94929",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 37,
           "column": 5
         }
       ]

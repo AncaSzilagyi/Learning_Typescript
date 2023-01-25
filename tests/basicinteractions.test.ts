@@ -33,3 +33,15 @@ test("Check sum - input field", async ({ page }) => {
     expect(result).toHaveText("" + expectedResult); //like getText() in Selenium;
 
 })
+
+test("Interact with checkboxes", async ({ page }) => {
+    await page.goto("https://www.lambdatest.com/selenium-playground/checkbox-demo");
+    const firstCheckbox = page.locator('#isAgeSelected');
+    expect(firstCheckbox).not.toBeChecked();
+    await firstCheckbox.check();
+    expect(firstCheckbox).toBeChecked();
+    const result = page.locator('#txtAge');
+    expect(result).toHaveText('Success - Check box is checked');
+    
+
+})
