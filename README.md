@@ -20,4 +20,9 @@ You can also see the report by executing
 npx playwright show-report
 ```
 
+# Other observations
+1. The difference between "type" and "fill" function:
+- type = writing each letter one by one
+- fill = deleting the text that is already in the field and importing the text we want to fill inside.
+
 The code is written with the help of [this tutorial from LambdaTest](https://youtu.be/wawbt1cATsk).
