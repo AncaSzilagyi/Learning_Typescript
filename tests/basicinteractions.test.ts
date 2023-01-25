@@ -42,6 +42,6 @@ test("Interact with checkboxes", async ({ page }) => {
     expect(firstCheckbox).toBeChecked();
     const result = page.locator('#txtAge');
     expect(result).toHaveText('Success - Check box is checked');
-    
+
 
 })

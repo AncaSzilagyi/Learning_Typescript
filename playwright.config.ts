@@ -2,7 +2,7 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/basicinteractions.test.ts"],  
+  testMatch: ["tests/alertsHandling.test.ts"],  
   use: {
     headless: false,
     screenshot: "on",
@@ -12,7 +12,7 @@ const config: PlaywrightTestConfig = {
   reporter: [["dot"], ["json", {
     outputFile: "jsonReports/jsonReport.json"
   }], ["html", {
-    open: "always"
+    open: "on-failure"
   }]]
 };
 

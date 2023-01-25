@@ -20,7 +20,7 @@
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "tests/basicinteractions.test.ts"
+          "tests/alertsHandling.test.ts"
         ],
         "timeout": 30000
       }
@@ -39,7 +39,7 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "on-failure"
         }
       ]
     ],
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\basicinteractions.test.ts",
-      "file": "tests/basicinteractions.test.ts",
+      "title": "tests\\alertsHandling.test.ts",
+      "file": "tests/alertsHandling.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Check first input field",
+          "title": "handling alerts",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,104 +78,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1553,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Please enter your Message\n"
-                    },
-                    {
-                      "text": "\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-01-25T09:31:20.070Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-basicinteractions-Check-first-input-field\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "53707f89fa4936475b86-80ec8c63d42c1988e068",
-          "file": "tests/basicinteractions.test.ts",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "Check sum - input field",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1282,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "487695\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-01-25T09:31:22.089Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-basicinteractions-Check-sum---input-field\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "53707f89fa4936475b86-47726e9d3ce8df8f82c0",
-          "file": "tests/basicinteractions.test.ts",
-          "line": 15,
-          "column": 5
-        },
-        {
-          "title": "Interact with checkboxes",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1087,
+                  "duration": 1610,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-25T09:31:23.372Z",
+                  "startTime": "2023-01-25T09:58:21.107Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-basicinteractions-Interact-with-checkboxes\\test-finished-1.png"
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-alertsHandling-handling-alerts\\test-finished-1.png"
                     }
                   ]
                 }
@@ -183,9 +96,9 @@
               "status": "expected"
             }
           ],
-          "id": "53707f89fa4936475b86-2ac53b1a0ae141b94929",
-          "file": "tests/basicinteractions.test.ts",
-          "line": 37,
+          "id": "d2aaa9a791b74263e238-a3aed28a130dfafa3d33",
+          "file": "tests/alertsHandling.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
