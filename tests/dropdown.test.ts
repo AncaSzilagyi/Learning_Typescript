@@ -8,4 +8,11 @@ test("Handling dropdown", async ({ page }) => {
         index: 3
     });
     await page.waitForTimeout(3000);
+    await page.selectOption('#multi-select', [{
+        label: "Texas"
+    }, {
+        index: 2
+    }, {
+        value: "Washington"
+    }])
 })
