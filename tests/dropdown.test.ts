@@ -17,13 +17,21 @@ test("Handling dropdown", async ({ page }) => {
     }])
 })
 
-test("Bootstrap dropdown", async ({page}) => {
+test("Bootstrap dropdown", async ({ page }) => {
     await page.goto('https://www.lambdatest.com/selenium-playground/jquery-dropdown-search-demo');
-    await page.click("#country+span");
-    await page.locator('ul#select2-country-results', {
-        has: page.locator("li", {
-            hasText: "India"
-        })
-    }).click();
+    
+    await selectCountry("India");
+    await selectCountry("Denmark");
+    await selectCountry("New Zealand");
+    await page.screenshot();
+    //an ul that has a li that has text India (explanation)
     await page.waitForTimeout(3000);
+
+    async function selectCountry(countryName) {
+        await page.click("#country+span");
+        await page.locator('ul#select2-country-results')
+            .locator("li", {
+                hasText: countryName
+            }).click();
+    }
 })
