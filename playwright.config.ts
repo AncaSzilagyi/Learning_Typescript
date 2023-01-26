@@ -2,11 +2,14 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/dropdown.test.ts"],  
+  testMatch: ["tests/dropdown.test.ts"],
   use: {
     headless: false,
     screenshot: "on",
-    video: "retain-on-failure"
+    video: "retain-on-failure",
+    launchOptions: {
+      slowMo: 1000
+    }
   },
   retries: 0,
   reporter: [["dot"], ["json", {
