@@ -2,7 +2,7 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/frames.test.ts"],
+  testMatch: ["tests/windows.test.ts"],
   use: {
     headless: false,
     screenshot: "on",

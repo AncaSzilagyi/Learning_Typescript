@@ -20,7 +20,7 @@
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "tests/frames.test.ts"
+          "tests/windows.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\frames.test.ts",
-      "file": "tests/frames.test.ts",
+      "title": "tests\\windows.test.ts",
+      "file": "tests/windows.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Interact with frames",
+          "title": "Interact with multiple tabs",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,21 +78,29 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 13151,
+                  "duration": 10251,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No of frames: 18\n"
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "https://twitter.com/Lambdatesting\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-30T09:54:49.619Z",
+                  "startTime": "2023-01-30T10:27:48.882Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-frames-Interact-with-frames\\test-finished-1.png"
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-windows-Interact-with-multiple-tabs\\test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-windows-Interact-with-multiple-tabs\\test-finished-2.png"
                     }
                   ]
                 }
@@ -100,8 +108,8 @@
               "status": "expected"
             }
           ],
-          "id": "ee77907c2abffffa1fe6-0cf2fd3824902149f18b",
-          "file": "tests/frames.test.ts",
+          "id": "98c21ebe87e39c315e15-ab38da95de1cb30408a1",
+          "file": "tests/windows.test.ts",
           "line": 3,
           "column": 5
         }
