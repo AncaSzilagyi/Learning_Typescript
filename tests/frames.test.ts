@@ -5,12 +5,23 @@ test("Interact with frames", async ({ page }) => {
     const allFrames = page.frames();
     console.log("No of frames: " + allFrames.length);
 
-    const firstFrame = page.frame("firstFr");
-    await firstFrame?.fill("input[name='fname']", "Elisa");
+    //First way to assert:
+
+    const myFrame = page.frame("firstFr");
+    var firstName = "Elisa";
+    await myFrame?.fill("input[name='fname']", firstName);
     //question mark considers the case
     //where there is no frame
+    var lastName = "test";
+    await myFrame?.fill("input[name='lname']", lastName);
+    expect(await myFrame?.locator("//p[@class='title has-text-info']").textContent()).toContain('You have entered ' + firstName + " " + lastName);
 
-    await firstFrame?.fill("input[name='lname']", "test");
+    //Second way to assert:
+
+    // const myFrame = page.frameLocator("#firstFr");
+    // await myFrame.locator("input[name='fname']").fill("Elisa"); 
+    // await myFrame.locator("input[name='lname']").fill("test");
+
 
     await page.waitForTimeout(3000);
 })
