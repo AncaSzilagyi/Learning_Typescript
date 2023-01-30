@@ -78,19 +78,19 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 10251,
+                  "duration": 7061,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
                     },
                     {
-                      "text": "https://twitter.com/Lambdatesting\n"
+                      "text": "No. of tabs is: 3\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-30T10:27:48.882Z",
+                  "startTime": "2023-01-30T13:41:30.573Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -101,6 +101,11 @@
                       "name": "screenshot",
                       "contentType": "image/png",
                       "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-windows-Interact-with-multiple-tabs\\test-finished-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-windows-Interact-with-multiple-tabs\\test-finished-3.png"
                     }
                   ]
                 }
