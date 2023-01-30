@@ -78,16 +78,16 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12801,
+                  "duration": 13151,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No of frames: 16\n"
+                      "text": "No of frames: 18\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-30T09:45:29.916Z",
+                  "startTime": "2023-01-30T09:54:49.619Z",
                   "attachments": [
                     {
                       "name": "screenshot",
