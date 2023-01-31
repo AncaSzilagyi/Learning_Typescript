@@ -1,7 +1,32 @@
 # Playwright_tests_with_Typescript
 Basic tests with Playwright. My learning experience.
 
---- I will add some tutorial with installing process here.
+# Installing Playwright
+Get started by installing Playwright using npm or yarn. Alternatively you can also get started and run your tests using the [VS Code Extension](https://playwright.dev/docs/getting-started-vscode).
+```
+npm init playwright@latest
+```
+Run the install command and select the following to get started:
+
+- Choose between TypeScript or JavaScript (default is TypeScript)
+- Name of your Tests folder (default is tests or e2e if you already have a tests folder in - your project)
+- Add a GitHub Actions workflow to easily run tests on CI
+- Install Playwright browsers (default is true)
+
+# What's installed
+Playwright will download the browsers needed as well as create the following files.
+```
+playwright.config.ts
+package.json
+package-lock.json
+tests/
+  example.spec.ts
+tests-examples/
+  demo-todo-app.spec.ts
+```
+The playwright.config is where you can add configuration for Playwright including modifying which browsers you would like to run Playwright on. If you are running tests inside an already existing project then dependencies will be added directly to your package.json.
+
+The tests folder contains a basic example test to help you get started with testing. For a more detailed example check out the tests-examples folder which contains tests written to test a todo app.
 
 # Run script
 ```
