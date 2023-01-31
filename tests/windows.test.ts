@@ -12,6 +12,10 @@ test("Interact with multiple tabs", async ({ page }) => {
 
     const pages = multiplePages.context().pages(); //gives all the pages.
     console.log("No. of tabs is: " + pages.length);
+
+    pages.forEach(tab => {
+        console.log(tab.url())
+    })
     // const [newWindow] = await Promise.all([
     //     page.waitForEvent("popup"),
     //     page.click("'Follow On Twitter'")

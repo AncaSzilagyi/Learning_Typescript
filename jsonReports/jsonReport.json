@@ -78,7 +78,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7061,
+                  "duration": 6917,
                   "errors": [],
                   "stdout": [
                     {
@@ -86,11 +86,20 @@
                     },
                     {
                       "text": "No. of tabs is: 3\n"
+                    },
+                    {
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "https://www.facebook.com/lambdatest/\n"
+                    },
+                    {
+                      "text": "https://twitter.com/intent/follow?screen_name=Lambdatesting\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-30T13:41:30.573Z",
+                  "startTime": "2023-01-30T13:43:59.324Z",
                   "attachments": [
                     {
                       "name": "screenshot",
