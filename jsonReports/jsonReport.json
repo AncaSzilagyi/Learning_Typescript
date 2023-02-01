@@ -20,7 +20,7 @@
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "tests/windows.test.ts"
+          "tests/calendar.test.ts"
         ],
         "timeout": 30000
       }
@@ -39,7 +39,7 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "never"
         }
       ]
     ],
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\windows.test.ts",
-      "file": "tests/windows.test.ts",
+      "title": "tests\\calendar.test.ts",
+      "file": "tests/calendar.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Interact with multiple tabs",
+          "title": "Calendar demo using fill function",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,46 +78,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8583,
+                  "duration": 9153,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
-                    },
-                    {
-                      "text": "No. of tabs is: 3\n"
-                    },
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
-                    },
-                    {
-                      "text": "https://www.facebook.com/lambdatest/\n"
-                    },
-                    {
-                      "text": "https://twitter.com/intent/follow?screen_name=Lambdatesting\n"
-                    },
-                    {
-                      "text": "LambdaTest\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-02-01T11:00:13.253Z",
+                  "startTime": "2023-02-01T11:09:40.003Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-windows-Interact-with-multiple-tabs\\test-finished-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-windows-Interact-with-multiple-tabs\\test-finished-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-windows-Interact-with-multiple-tabs\\test-finished-3.png"
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-calendar-Calendar-demo-using-fill-function\\test-finished-1.png"
                     }
                   ]
                 }
@@ -125,8 +96,8 @@
               "status": "expected"
             }
           ],
-          "id": "98c21ebe87e39c315e15-ab38da95de1cb30408a1",
-          "file": "tests/windows.test.ts",
+          "id": "68c95afee124c9066c67-a6070fc4dbfb9770c8d9",
+          "file": "tests/calendar.test.ts",
           "line": 3,
           "column": 5
         }
