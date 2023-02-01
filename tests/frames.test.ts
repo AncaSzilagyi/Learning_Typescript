@@ -23,7 +23,7 @@ test("Interact with frames", async ({ page }) => {
     await myFrame.locator("input[name='lname']").fill("test");
 
     const innerFrame = myFrame.frameLocator("iframe[src='innerFrame']");
-    await innerFrame.locator("input[name='email']").fill("elisa@test.com");
+    await innerFrame.locator("input[name='lname']").fill("elisa@test.com");
 
 
     await page.waitForTimeout(3000);

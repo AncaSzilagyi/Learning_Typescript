@@ -9,6 +9,7 @@ test("Interact with multiple tabs", async ({ page }) => {
         page.waitForEvent("popup"),
         page.click("#followboth")
     ]);
+    await page.waitForLoadState();
 
     const pages = multiplePages.context().pages(); //gives all the pages.
     console.log("No. of tabs is: " + pages.length);
