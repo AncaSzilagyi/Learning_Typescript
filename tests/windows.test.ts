@@ -17,6 +17,19 @@ test("Interact with multiple tabs", async ({ page }) => {
     pages.forEach(tab => {
         console.log(tab.url())
     })
+
+    let facebookPage;
+    for (let index = 0; index < pages.length; index++) {
+        const url = pages[index].url();
+        if (url == "https://www.facebook.com/lambdatest/") {
+            facebookPage = pages[index];
+        }
+    }
+
+    const text = await facebookPage.textContent("//h1");
+    console.log(text);
+
+    // await pages[1].fill("", "elisa");
     // const [newWindow] = await Promise.all([
     //     page.waitForEvent("popup"),
     //     page.click("'Follow On Twitter'")
