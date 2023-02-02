@@ -14,7 +14,7 @@ export default class LoginPage {
     //todo write test case for Forgotten Password link 
 
     async clickLoginBtn(){
-        await this.page.click("//input[@value='Login']")
+        await this.page.click("//input[@value='Login']");
     }
 
 }
