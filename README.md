@@ -55,4 +55,4 @@ npx playwright show-report
 # Utils
 The code is written with the help of [this tutorial from LambdaTest](https://youtu.be/wawbt1cATsk).
 
-Also, here is [Playwright official documentation](https://playwright.dev/docs/downloads).
+Also, here is [Playwright official documentation](https://playwright.dev/docs).
