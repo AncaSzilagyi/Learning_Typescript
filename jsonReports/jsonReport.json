@@ -65,7 +65,7 @@
       "specs": [
         {
           "title": "should match a snapshot",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -77,46 +77,23 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 9611,
-                  "error": {
-                    "message": "A snapshot doesn't exist at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\tests\\meetupEx2.test.ts-snapshots\\someName-win32.png, writing actual.",
-                    "stack": "Error: A snapshot doesn't exist at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\tests\\meetupEx2.test.ts-snapshots\\someName-win32.png, writing actual.\n    at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\tests\\meetupEx2.test.ts:7:37"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\tests\\meetupEx2.test.ts",
-                        "column": 37,
-                        "line": 7
-                      },
-                      "message": "Error: A snapshot doesn't exist at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\tests\\meetupEx2.test.ts-snapshots\\someName-win32.png, writing actual.\n\n\u001b[90m   at \u001b[39mtests\\meetupEx2.test.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'http://www.meetup.com'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ path\u001b[33m:\u001b[39m \u001b[32m'someName.png'\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot())\u001b[33m.\u001b[39mtoMatchSnapshot(\u001b[32m'someName.png'\u001b[39m\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  8 |\u001b[39m         threshold\u001b[33m:\u001b[39m \u001b[35m0.3\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\tests\\meetupEx2.test.ts:7:37\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 10524,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-02-02T09:14:49.859Z",
+                  "startTime": "2023-02-02T09:18:30.601Z",
                   "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-meetupEx2-should-match-a-snapshot\\video.webm"
-                    },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-meetupEx2-should-match-a-snapshot\\test-failed-1.png"
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-meetupEx2-should-match-a-snapshot\\test-finished-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\tests\\meetupEx2.test.ts",
-                    "column": 37,
-                    "line": 7
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "3a6789a4f541ac979837-c963a594cfa143ac68b4",
