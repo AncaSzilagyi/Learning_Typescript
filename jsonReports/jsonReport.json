@@ -20,7 +20,7 @@
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "tests/meetupEx2.test.ts"
+          "tests/uploadDownload.test.ts"
         ],
         "timeout": 30000
       }
@@ -39,7 +39,7 @@
       [
         "html",
         {
-          "open": "never"
+          "open": "always"
         }
       ]
     ],
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\meetupEx2.test.ts",
-      "file": "tests/meetupEx2.test.ts",
+      "title": "tests\\uploadDownload.test.ts",
+      "file": "tests/uploadDownload.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "should match a snapshot",
+          "title": "Download files",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,17 +78,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 10524,
+                  "duration": 11010,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-02-02T09:18:30.601Z",
+                  "startTime": "2023-02-02T11:29:14.702Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-meetupEx2-should-match-a-snapshot\\test-finished-1.png"
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-uploadDownload-Download-files\\test-finished-1.png"
                     }
                   ]
                 }
@@ -96,8 +96,8 @@
               "status": "expected"
             }
           ],
-          "id": "3a6789a4f541ac979837-c963a594cfa143ac68b4",
-          "file": "tests/meetupEx2.test.ts",
+          "id": "bff505410ff9353f2355-f656baf58696ef99ab06",
+          "file": "tests/uploadDownload.test.ts",
           "line": 3,
           "column": 5
         }
