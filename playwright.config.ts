@@ -2,7 +2,7 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/calendar.test.ts"],
+  testMatch: ["tests/meetupExamples.test.ts"],
   use: {
     headless: false,
     screenshot: "on",

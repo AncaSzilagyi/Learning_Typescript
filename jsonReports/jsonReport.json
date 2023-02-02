@@ -20,7 +20,7 @@
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "tests/calendar.test.ts"
+          "tests/meetupExamples.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,13 +58,13 @@
   },
   "suites": [
     {
-      "title": "tests\\calendar.test.ts",
-      "file": "tests/calendar.test.ts",
+      "title": "tests\\meetupExamples.test.ts",
+      "file": "tests/meetupExamples.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Calendar demo using fill function",
+          "title": "Meetup examples",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,17 +78,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9153,
+                  "duration": 27741,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-02-01T11:09:40.003Z",
+                  "startTime": "2023-02-01T14:22:51.196Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-calendar-Calendar-demo-using-fill-function\\test-finished-1.png"
+                      "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\tests-meetupExamples-Meetup-examples\\test-finished-1.png"
                     }
                   ]
                 }
@@ -96,8 +96,8 @@
               "status": "expected"
             }
           ],
-          "id": "68c95afee124c9066c67-a6070fc4dbfb9770c8d9",
-          "file": "tests/calendar.test.ts",
+          "id": "464a92d4638adb60434b-c95e6ed40a0bc93cbe66",
+          "file": "tests/meetupExamples.test.ts",
           "line": 3,
           "column": 5
         }
