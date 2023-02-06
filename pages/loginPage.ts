@@ -3,18 +3,20 @@ export default class LoginPage {
     constructor(public page: Page) {
     }
     async enterEmail(email: string) {
-        this.page.locator("#input-email")
-            .type(email);
+        await this.page.type("//input[@name='email']", email, { delay: 50 })
     }
     async enterLoginPassword(password: string) {
-        this.page.locator("#input-password")
-            .type(password);
+        await this.page.type("//input[@name='password']", password, { delay: 50 })
+
     }
 
     //todo write test case for Forgotten Password link 
 
-    async clickLoginBtn(){
-        await this.page.click("//input[@value='Login']");
+    async clickLoginBtn() {
+        await Promise.all([
+            this.page.waitForNavigation(),
+            await this.page.click("//input[@value='Login']")
+        ])
     }
 
 }

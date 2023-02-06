@@ -4,9 +4,9 @@ import LoginPage from '../pages/loginPage';
 import SpecialHotPage from '../pages/specialHotPage';
 import HomePage from '../pages/homePage';
 
-const email = "testElisa02@mailinator.com";
+const email = "testElisa03@mailinator.com";
 const password = "testPassword";
-test("Register test_01", async ({ page, baseURL}) => {
+test("Register test_01", async ({ page, baseURL }) => {
     const register = new RegisterPage(page);
     await page.goto(`${baseURL}route=account/register`);
     await register.enterFirstName("Elisa");
@@ -20,3 +20,19 @@ test("Register test_01", async ({ page, baseURL}) => {
     await register.clickContinueToRegister();
 
 })
+
+test("Login test_02", async ({ page, baseURL }) => {
+    const login = new LoginPage(page);
+    await page.goto(`${baseURL}route=account/login`);
+    await login.enterEmail(email);
+    await login.enterLoginPassword(password);
+    await login.clickLoginBtn();
+    expect(await page.title()).toBe("My Account");
+})
+
+//todo create some tests for error login (email and wrong password, or email without pass)
+
+// test("Add to cart test_03", async ({ page, baseURL }) => {
+//     const login = new LoginPage(page);
+//     await page.goto(`${baseURL}route=account/Login`);
+// })
