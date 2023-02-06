@@ -15,12 +15,25 @@
         "outputDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "",
-        "name": "",
+        "id": "chrome",
+        "name": "chrome",
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "pomtests/addToCart.test.ts"
+          "fixture/fixtureTest.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome1",
+        "name": "chrome",
+        "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
+        "testIgnore": [],
+        "testMatch": [
+          "fixture/fixtureTest.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,133 +71,71 @@
   },
   "suites": [
     {
-      "title": "pomtests\\addToCart.test.ts",
-      "file": "pomtests/addToCart.test.ts",
+      "title": "fixture\\fixtureTest.test.ts",
+      "file": "fixture/fixtureTest.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Page object test demo",
-          "file": "pomtests/addToCart.test.ts",
-          "line": 9,
-          "column": 6,
-          "specs": [
+          "title": "fixture demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Register test_01",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 19,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 21329,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-02-06T09:30:14.533Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomtests-addToCart-Page-object-test-demo-Register-test-01\\test-finished-1.png"
-                        }
-                      ]
+                      "text": "\u001b[33m27\u001b[39m elisa1000@mailinator.com\n"
                     }
                   ],
-                  "status": "expected"
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-02-06T09:53:18.553Z",
+                  "attachments": []
                 }
               ],
-              "id": "5562f48897df24eb67b8-9badf923e663f9446906",
-              "file": "pomtests/addToCart.test.ts",
-              "line": 10,
-              "column": 9
+              "status": "expected"
             },
             {
-              "title": "Login test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome1",
+              "projectName": "chrome",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 19,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 12421,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-02-06T09:30:36.930Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomtests-addToCart-Page-object-test-demo-Login-test-02\\test-finished-1.png"
-                        }
-                      ]
+                      "text": "\u001b[33m27\u001b[39m elisa1000@mailinator.com\n"
                     }
                   ],
-                  "status": "expected"
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-02-06T09:53:18.556Z",
+                  "attachments": []
                 }
               ],
-              "id": "5562f48897df24eb67b8-3400928bfe717cb68493",
-              "file": "pomtests/addToCart.test.ts",
-              "line": 25,
-              "column": 9
-            },
-            {
-              "title": "Add to cart test_03",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 18893,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-02-06T09:30:49.355Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomtests-addToCart-Page-object-test-demo-Add-to-cart-test-03\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5562f48897df24eb67b8-c188f68501bed515cbb6",
-              "file": "pomtests/addToCart.test.ts",
-              "line": 36,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "8197fb6fcaffc8617c63-a2811e782633c84c6337",
+          "file": "fixture/fixtureTest.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }

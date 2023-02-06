@@ -2,7 +2,21 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["pomtests/addToCart.test.ts"],
+  projects: [
+    {
+      name: "chrome",
+      use: {
+        ...devices["Desktop Chrome"]
+      }
+    },
+    {
+      name: "chrome",
+      use: {
+        ...devices["Desktop Firefox"]
+      }
+    }
+  ],
+  testMatch: ["fixture/fixtureTest.test.ts"],
   use: {
     baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
     headless: false,
