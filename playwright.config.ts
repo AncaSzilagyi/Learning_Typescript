@@ -2,9 +2,11 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/uploadDownload.test.ts"],
+  testMatch: ["pomtests/addToCart.test.ts"],
   use: {
+    baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
     headless: false,
+
     screenshot: "on",
     video: "retain-on-failure",
     launchOptions: {
