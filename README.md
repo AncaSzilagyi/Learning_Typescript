@@ -53,7 +53,6 @@ npx playwright show-report
 2. For now, everytime I use the command **"npx playwright test"**, it will run all the tests that I chose to be runned from **config file**, in line _testMatch: ["tests/alertsHandling.test.ts"]_.
 
 3. The _**await**_ keyword makes the function pause the execution and wait for a resolved promise before it continues:
-e.g.
 ```
 let value = await promise;
 ```
