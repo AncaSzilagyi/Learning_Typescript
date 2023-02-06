@@ -2,6 +2,11 @@ import { Page } from "@playwright/test"
 export default class LoginPage {
     constructor(public page: Page) {
     }
+    async login(email: string, password: string) {
+        await this.enterEmail(email);
+        await this.enterLoginPassword(password);
+        await this.clickLoginBtn();
+    }
     async enterEmail(email: string) {
         await this.page.type("//input[@name='email']", email, { delay: 50 })
     }

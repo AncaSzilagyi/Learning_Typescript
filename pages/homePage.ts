@@ -3,10 +3,12 @@ export default class HomePage {
     constructor(public page: Page) {
     }
     async clickOnSpecialHotMenu() {
-        await this.page.click("'Special Hot'");
-        
-    }
+        await Promise.all([
+            this.page.waitForNavigation({ waitUntil: "networkidle" }),
+            await this.page.click("//ul[@class='navbar-nav horizontal']/li/a/div/span[contains(text(),'Special')]")
+        ])
 
+    }
 
 
 
