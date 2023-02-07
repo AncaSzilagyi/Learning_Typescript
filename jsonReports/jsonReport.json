@@ -20,7 +20,7 @@
         "testDir": "c:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "pomTests/registerTests.test.ts"
+          "pomTests/loginTests.test.ts"
         ],
         "timeout": 30000
       }
@@ -58,20 +58,20 @@
   },
   "suites": [
     {
-      "title": "pomTests\\registerTests.test.ts",
-      "file": "pomTests/registerTests.test.ts",
+      "title": "pomTests\\loginTests.test.ts",
+      "file": "pomTests/loginTests.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Register form tests",
-          "file": "pomTests/registerTests.test.ts",
-          "line": 6,
+          "title": "Login tests",
+          "file": "pomTests/loginTests.test.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "Register with email that is already registered | test_03",
+              "title": "Login with invalid email | test_02",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,17 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 20935,
+                      "duration": 13121,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "testElisa02@mailinator.com\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-02-07T10:02:52.177Z",
+                      "startTime": "2023-02-07T12:18:52.180Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Register-form-tests-Register-with-email-that-is-already-registered-test-03\\test-finished-1.png"
+                          "path": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-loginTests-Login-tests-Login-with-invalid-email-test-02\\test-finished-1.png"
                         }
                       ]
                     }
@@ -107,9 +103,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "58a81b4ddbefe6e2daf9-d17521ad0015162e4ae7",
-              "file": "pomTests/registerTests.test.ts",
-              "line": 40,
+              "id": "e181bc1647c43da81fa0-93dd64723fd4c46a24c7",
+              "file": "pomTests/loginTests.test.ts",
+              "line": 16,
               "column": 9
             }
           ]
