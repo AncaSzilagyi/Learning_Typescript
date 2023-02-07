@@ -12,12 +12,12 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
+        "outputDir": "c:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
+        "testDir": "c:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
           "pomTests/registerTests.test.ts"
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\playwright.config.ts",
-    "rootDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
+    "configFile": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\playwright.config.ts",
+    "rootDir": "c:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -71,7 +71,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Full register | test_01",
+              "title": "Register with email that is already registered | test_03",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,21 +85,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 20965,
+                      "duration": 20935,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "testElisa549@mailinator.com\n"
+                          "text": "testElisa02@mailinator.com\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-02-07T09:55:31.839Z",
+                      "startTime": "2023-02-07T10:02:52.177Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Register-form-tests-Full-register-test-01\\test-finished-1.png"
+                          "path": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Register-form-tests-Register-with-email-that-is-already-registered-test-03\\test-finished-1.png"
                         }
                       ]
                     }
@@ -107,51 +107,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "58a81b4ddbefe6e2daf9-061aba6bef374e8c1203",
+              "id": "58a81b4ddbefe6e2daf9-d17521ad0015162e4ae7",
               "file": "pomTests/registerTests.test.ts",
-              "line": 7,
-              "column": 9
-            },
-            {
-              "title": "Register with invalid inputs | test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 25717,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "testElisa677@mailinator.com\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-02-07T09:55:53.441Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Register-form-tests-Register-with-invalid-inputs-test-02\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "58a81b4ddbefe6e2daf9-6f8f053e504441fb550c",
-              "file": "pomTests/registerTests.test.ts",
-              "line": 23,
+              "line": 40,
               "column": 9
             }
           ]

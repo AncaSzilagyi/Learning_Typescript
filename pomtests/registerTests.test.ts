@@ -37,5 +37,21 @@ test.describe("Register form tests", async () => {
         await expect(page.locator("//div[@class='text-danger']").nth(1)).toHaveText("Password confirmation does not match password!");
         await expect(page.locator("//div[@class='alert alert-danger alert-dismissible']")).toHaveText(" Warning: You must agree to the Privacy Policy!");
     })
+    test("Register with email that is already registered | test_03", async ({ page, baseURL }) => {
+        const register = new RegisterPage(page);
+        const email = "testElisa02@mailinator.com";
+        console.log(email);
+        await page.goto(`${baseURL}route=account/register`);
+        await register.enterFirstName("Elisa");
+        await register.enterLastName("test");
+        await register.enterEmail(email);
+        await register.enterTelephone(register.generateRandomNumber(10000, 90000));
+        await register.enterPassword(password);
+        await register.enterConfirmPassword(password);
+        await register.clickTermsAndConditions();
+        await register.clickContinueToRegister();
+        await expect(page.locator("//div[@class='alert alert-danger alert-dismissible']")).toHaveText(" Warning: E-Mail Address is already registered!");
+    })
+
 })
 
