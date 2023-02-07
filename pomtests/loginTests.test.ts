@@ -7,7 +7,6 @@ const password = "testPassword";
 test.describe("Login tests", async () => {
     test("Login | test_01", async ({ page, baseURL }) => {
         const login = new LoginPage(page);
-        console.log(email);
         await page.goto(`${baseURL}route=account/login`);
         await login.enterEmail(email);
         await login.enterLoginPassword(password);
@@ -17,7 +16,6 @@ test.describe("Login tests", async () => {
     test("Login with invalid email | test_02", async ({ page, baseURL }) => {
         const login = new LoginPage(page);
         const randomEmail = "testElisa" + login.generateRandomNumber(3, 1000) + "@mailinator.com";
-        console.log(email);
         await page.goto(`${baseURL}route=account/login`);
         await login.enterEmail(email);
         await login.enterLoginPassword(password);
