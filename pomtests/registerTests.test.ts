@@ -29,14 +29,13 @@ test.describe("Register form tests", async () => {
         await register.enterLastName("This field will contain more than 32 charaters, as supposed.");
         await register.enterEmail(email);
         await register.enterTelephone(register.generateRandomNumber(10000, 90000)+"someLetters");
+        //expected alert message here.
         await register.enterPassword(password);
         await register.enterConfirmPassword(password+"not the same password");
-        // await expect(register.isSubscribedChecked()).toBeChecked();
-        await register.clickTermsAndConditions();
         await register.clickContinueToRegister();
         await expect(page.locator("//div[@class='text-danger']").nth(0)).toHaveText("Last Name must be between 1 and 32 characters!");
         await expect(page.locator("//div[@class='text-danger']").nth(1)).toHaveText("Password confirmation does not match password!");
-
+        await expect(page.locator("//div[@class='alert alert-danger alert-dismissible']")).toHaveText(" Warning: You must agree to the Privacy Policy!");
     })
 })
 

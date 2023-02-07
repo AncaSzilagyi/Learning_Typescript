@@ -65,7 +65,7 @@
       "specs": [],
       "suites": [
         {
-          "title": "Page object test demo",
+          "title": "Register form tests",
           "file": "pomTests/registerTests.test.ts",
           "line": 6,
           "column": 6,
@@ -85,21 +85,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 20674,
+                      "duration": 20965,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "testElisa189@mailinator.com\n"
+                          "text": "testElisa549@mailinator.com\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-02-07T09:41:53.377Z",
+                      "startTime": "2023-02-07T09:55:31.839Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Page-object-test-demo-Full-register-test-01\\test-finished-1.png"
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Register-form-tests-Full-register-test-01\\test-finished-1.png"
                         }
                       ]
                     }
@@ -107,7 +107,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "58a81b4ddbefe6e2daf9-211ee7fe96f7c648e206",
+              "id": "58a81b4ddbefe6e2daf9-061aba6bef374e8c1203",
               "file": "pomTests/registerTests.test.ts",
               "line": 7,
               "column": 9
@@ -127,21 +127,21 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 26013,
+                      "duration": 25717,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "testElisa258@mailinator.com\n"
+                          "text": "testElisa677@mailinator.com\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-02-07T09:42:14.603Z",
+                      "startTime": "2023-02-07T09:55:53.441Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Page-object-test-demo-Register-with-invalid-inputs-test-02\\test-finished-1.png"
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Register-form-tests-Register-with-invalid-inputs-test-02\\test-finished-1.png"
                         }
                       ]
                     }
@@ -149,7 +149,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "58a81b4ddbefe6e2daf9-568ec1fdc416f269fa1e",
+              "id": "58a81b4ddbefe6e2daf9-6f8f053e504441fb550c",
               "file": "pomTests/registerTests.test.ts",
               "line": 23,
               "column": 9
