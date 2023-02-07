@@ -7,7 +7,6 @@ test.describe("Register form tests", async () => {
     test("Full register | test_01", async ({ page, baseURL }) => {
         const register = new RegisterPage(page);
         const email = "testElisa" + register.generateRandomNumber(3, 1000) + "@mailinator.com";
-        console.log(email);
         await page.goto(`${baseURL}route=account/register`);
         await register.enterFirstName("Elisa");
         await register.enterLastName("test");
@@ -23,7 +22,6 @@ test.describe("Register form tests", async () => {
     test("Register with invalid inputs | test_02", async ({ page, baseURL }) => {
         const register = new RegisterPage(page);
         const email = "testElisa" + register.generateRandomNumber(3, 1000) + "@mailinator.com";
-        console.log(email);
         await page.goto(`${baseURL}route=account/register`);
         await register.enterFirstName("Elisa");
         await register.enterLastName("This field will contain more than 32 charaters, as supposed.");
@@ -40,7 +38,6 @@ test.describe("Register form tests", async () => {
     test("Register with email that is already registered | test_03", async ({ page, baseURL }) => {
         const register = new RegisterPage(page);
         const email = "testElisa02@mailinator.com";
-        console.log(email);
         await page.goto(`${baseURL}route=account/register`);
         await register.enterFirstName("Elisa");
         await register.enterLastName("test");
