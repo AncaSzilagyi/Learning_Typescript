@@ -3,6 +3,13 @@ export default class RegisterPage {
     constructor(public page: Page) {
 
     }
+    generateRandomNumber(minimum: number, maximum: number){
+        minimum = Math.ceil(minimum);
+        maximum = Math.floor(maximum);
+        return (Math.floor(Math.random()*(maximum-minimum+1))+minimum).toString();
+
+    }
+
     async enterFirstName(firstname: string) {
         await this.page.type("//input[@name='firstname']", firstname, { delay: 50 })
     }

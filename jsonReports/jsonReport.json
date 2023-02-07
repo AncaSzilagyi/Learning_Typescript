@@ -15,25 +15,12 @@
         "outputDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "chrome",
-        "name": "chrome",
+        "id": "",
+        "name": "",
         "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "fixture/fixtureTest.test.ts"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "chrome1",
-        "name": "chrome",
-        "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
-        "testIgnore": [],
-        "testMatch": [
-          "fixture/fixtureTest.test.ts"
+          "pomTests/registerTests.test.ts"
         ],
         "timeout": 30000
       }
@@ -71,71 +58,103 @@
   },
   "suites": [
     {
-      "title": "fixture\\fixtureTest.test.ts",
-      "file": "fixture/fixtureTest.test.ts",
+      "title": "pomTests\\registerTests.test.ts",
+      "file": "pomTests/registerTests.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "fixture demo",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Page object test demo",
+          "file": "pomTests/registerTests.test.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chrome",
-              "projectName": "chrome",
-              "results": [
+              "title": "Full register | test_01",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 19,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
                     {
-                      "text": "\u001b[33m27\u001b[39m elisa1000@mailinator.com\n"
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 20674,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "testElisa189@mailinator.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-02-07T09:41:53.377Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Page-object-test-demo-Full-register-test-01\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-02-06T09:53:18.553Z",
-                  "attachments": []
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "58a81b4ddbefe6e2daf9-211ee7fe96f7c648e206",
+              "file": "pomTests/registerTests.test.ts",
+              "line": 7,
+              "column": 9
             },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chrome1",
-              "projectName": "chrome",
-              "results": [
+              "title": "Register with invalid inputs | test_02",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 19,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
                     {
-                      "text": "\u001b[33m27\u001b[39m elisa1000@mailinator.com\n"
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 26013,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "testElisa258@mailinator.com\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-02-07T09:42:14.603Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-registerTests-Page-object-test-demo-Register-with-invalid-inputs-test-02\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-02-06T09:53:18.556Z",
-                  "attachments": []
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "58a81b4ddbefe6e2daf9-568ec1fdc416f269fa1e",
+              "file": "pomTests/registerTests.test.ts",
+              "line": 23,
+              "column": 9
             }
-          ],
-          "id": "8197fb6fcaffc8617c63-a2811e782633c84c6337",
-          "file": "fixture/fixtureTest.test.ts",
-          "line": 3,
-          "column": 5
+          ]
         }
       ]
     }
