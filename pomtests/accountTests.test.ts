@@ -13,7 +13,8 @@ test.describe("Modify personal information", async () => {
         const myAccount = new MyAccount(page);
         await page.goto(`${baseURL}route=account/login`);
         await login.login(email, password);
-        await 
+        await homePage.clickEditAccountInfo();
+        
 
     })
 
