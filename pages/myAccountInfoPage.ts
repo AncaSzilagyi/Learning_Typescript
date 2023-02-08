@@ -21,20 +21,29 @@ export default class MyAccount {
         await this.page.fill(this.firstNameInput, "");
         await this.page.type(this.firstNameInput, firstname, { delay: 50 })
     }
+    getFirstName(){
+        return this.page.locator(this.firstNameInput).getAttribute('value');
+    }
     async modifyLastName(lastname: string) {
+        await this.page.fill(this.firstNameInput, "");
         await this.page.type(this.lastNameInput, lastname, { delay: 50 })
     }
+    getLastName(){
+        return this.page.locator(this.lastNameInput).getAttribute('value');
+    }
     async modifyEmail(email: string) {
+        //unused yet
+        await this.page.fill(this.firstNameInput, "");
         await this.page.type(this.emailInput, email, { delay: 50 })
     }
     async modifyTelephone(phone: string) {
+        //unused yet
+        await this.page.fill(this.firstNameInput, "");
         await this.page.type(this.telephoneInput, phone, { delay: 50 })
     }
 
     async clickContinueToRegister() {
-        // await this.page.click("//input[value='Continue']");
         Promise.all([
-            // this.page.waitForNavigation({ waitUntil: "networkidle" }),
             this.page.click("//input[@value='Continue']")
         ]);
 

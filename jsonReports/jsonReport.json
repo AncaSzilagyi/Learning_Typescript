@@ -12,15 +12,15 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "c:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
+        "outputDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "c:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
+        "testDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "pomTests/loginTests.test.ts"
+          "pomTests/accountTests.test.ts"
         ],
         "timeout": 30000
       }
@@ -47,8 +47,8 @@
       "max": 5,
       "threshold": 15000
     },
-    "configFile": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\playwright.config.ts",
-    "rootDir": "c:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
+    "configFile": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\playwright.config.ts",
+    "rootDir": "C:/Users/eliza.szilagyi/Desktop/Projects/Playwright/Playwright with Typescript/Playwright_tests_with_Typescript",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
@@ -58,21 +58,21 @@
   },
   "suites": [
     {
-      "title": "pomTests\\loginTests.test.ts",
-      "file": "pomTests/loginTests.test.ts",
+      "title": "pomTests\\accountTests.test.ts",
+      "file": "pomTests/accountTests.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Login tests",
-          "file": "pomTests/loginTests.test.ts",
-          "line": 7,
+          "title": "Modify personal information",
+          "file": "pomTests/accountTests.test.ts",
+          "line": 9,
           "column": 6,
           "specs": [
             {
-              "title": "Login with invalid password | test_02",
-              "ok": true,
+              "title": "Modify first and last names | test_01",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -84,28 +84,56 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 13308,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 29999,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pomTests\\accountTests.test.ts",
+                            "column": 47,
+                            "line": 33
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"last name - updated\"\u001b[39m\nReceived: \u001b[31m\"last name - updated\u001b[7mtest\u001b[27m\"\u001b[39m\n\n\u001b[90m   at \u001b[39mpomTests\\accountTests.test.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m         expect(\u001b[36mawait\u001b[39m myAccount\u001b[33m.\u001b[39mgetFirstName())\u001b[33m.\u001b[39mtoEqual(updatedFirstName)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         expect(\u001b[36mawait\u001b[39m myAccount\u001b[33m.\u001b[39mgetLastName())\u001b[33m.\u001b[39mtoEqual(updatedLastName)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pomTests\\accountTests.test.ts:33:47\u001b[22m"
+                        },
+                        {
+                          "message": "Pending operations:\n  - locator.getAttribute at pages\\myAccountInfoPage.ts:25:55\n"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-02-08T11:38:40.699Z",
+                      "startTime": "2023-02-08T13:19:28.986Z",
                       "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-accountTests-Modify-personal-information-Modify-first-and-last-names-test-01\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-accountTests-Modify-personal-information-Modify-first-and-last-names-test-01\\trace.zip"
+                        },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-loginTests-Login-tests-Login-with-invalid-password-test-02\\test-finished-1.png"
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-accountTests-Modify-personal-information-Modify-first-and-last-names-test-01\\test-failed-1.png"
                         }
                       ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "e181bc1647c43da81fa0-4bea6fece3f48c8ae37f",
-              "file": "pomTests/loginTests.test.ts",
-              "line": 32,
+              "id": "b4406d35aad78606a56c-d49f37f9a8e970d3e55a",
+              "file": "pomTests/accountTests.test.ts",
+              "line": 10,
               "column": 9
             }
           ]

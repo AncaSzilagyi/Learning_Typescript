@@ -16,7 +16,7 @@ const config: PlaywrightTestConfig = {
   //     }
   //   }
   // ],
-  testMatch: ["pomTests/loginTests.test.ts"],
+  testMatch: ["pomTests/accountTests.test.ts"],
   use: {
     baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
     headless: false,
