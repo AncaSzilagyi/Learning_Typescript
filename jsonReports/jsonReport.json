@@ -71,7 +71,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Login with invalid email | test_02",
+              "title": "Login with invalid password | test_02",
               "ok": true,
               "tags": [],
               "tests": [
@@ -85,17 +85,17 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 13121,
+                      "duration": 13308,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-02-07T12:18:52.180Z",
+                      "startTime": "2023-02-08T11:38:40.699Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-loginTests-Login-tests-Login-with-invalid-email-test-02\\test-finished-1.png"
+                          "path": "c:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-loginTests-Login-tests-Login-with-invalid-password-test-02\\test-finished-1.png"
                         }
                       ]
                     }
@@ -103,9 +103,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "e181bc1647c43da81fa0-93dd64723fd4c46a24c7",
+              "id": "e181bc1647c43da81fa0-4bea6fece3f48c8ae37f",
               "file": "pomTests/loginTests.test.ts",
-              "line": 16,
+              "line": 32,
               "column": 9
             }
           ]
