@@ -33,6 +33,13 @@ export default class HomePage {
     async clickSubscribe(){
         await this.page.click(this.subscribeBtn);
     }
+    async hoverMyAccount(){
+        await this.page.hover("//span[contains(text(),'My Account')]");
+    }
+    async logout(){
+        await this.page.click("//a[contains(text(),'Logout')]");
+        // await this.page.click("//span[contains(text(),'Logout')]");
+    }
 
 
 

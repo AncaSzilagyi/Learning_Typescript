@@ -85,30 +85,19 @@
                     {
                       "workerIndex": 0,
                       "status": "timedOut",
-                      "duration": 29999,
+                      "duration": 30007,
                       "error": {
                         "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                       },
                       "errors": [
                         {
                           "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pomTests\\accountTests.test.ts",
-                            "column": 47,
-                            "line": 33
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"last name - updated\"\u001b[39m\nReceived: \u001b[31m\"last name - updated\u001b[7mtest\u001b[27m\"\u001b[39m\n\n\u001b[90m   at \u001b[39mpomTests\\accountTests.test.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m         expect(\u001b[36mawait\u001b[39m myAccount\u001b[33m.\u001b[39mgetFirstName())\u001b[33m.\u001b[39mtoEqual(updatedFirstName)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         expect(\u001b[36mawait\u001b[39m myAccount\u001b[33m.\u001b[39mgetLastName())\u001b[33m.\u001b[39mtoEqual(updatedLastName)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pomTests\\accountTests.test.ts:33:47\u001b[22m"
-                        },
-                        {
-                          "message": "Pending operations:\n  - locator.getAttribute at pages\\myAccountInfoPage.ts:25:55\n"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-02-08T13:19:28.986Z",
+                      "startTime": "2023-02-09T13:25:32.176Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -134,6 +123,72 @@
               "id": "b4406d35aad78606a56c-d49f37f9a8e970d3e55a",
               "file": "pomTests/accountTests.test.ts",
               "line": 10,
+              "column": 9
+            },
+            {
+              "title": "Change password | test_02",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30005,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pages\\loginPage.ts",
+                            "column": 23,
+                            "line": 49
+                          },
+                          "message": "page.waitForNavigation: net::ERR_ABORTED; maybe frame was detached?\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\loginPage.ts:49\n\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36masync\u001b[39m clickLoginBtn() {\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m             \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 50 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"//input[@value='Login']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m         ])\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m     }\u001b[0m\n\n\u001b[2m    at LoginPage.clickLoginBtn (C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pages\\loginPage.ts:49:23)\u001b[22m\n\u001b[2m    at LoginPage.login (C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pages\\loginPage.ts:35:20)\u001b[22m\n\u001b[2m    at C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\pomTests\\accountTests.test.ts:57:9\u001b[22m"
+                        },
+                        {
+                          "message": "Pending operations:\n  - page.type at pages\\loginPage.ts:41:25\n"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-02-09T13:26:07.454Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-accountTests-Modify-personal-information-Change-password-test-02\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-accountTests-Modify-personal-information-Change-password-test-02\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\eliza.szilagyi\\Desktop\\Projects\\Playwright\\Playwright with Typescript\\Playwright_tests_with_Typescript\\test-results\\pomTests-accountTests-Modify-personal-information-Change-password-test-02\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4406d35aad78606a56c-88e4dd8502a826fb7665",
+              "file": "pomTests/accountTests.test.ts",
+              "line": 37,
               "column": 9
             }
           ]

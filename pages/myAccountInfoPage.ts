@@ -4,11 +4,15 @@ export default class MyAccount {
     public lastNameInput: string;
     public emailInput: string;
     public telephoneInput: string;
+    public newPasswordInput: string;
+    public newPasswordConfirmInput: string;
     constructor(public page: Page) {
         this.firstNameInput = "//input[@name='firstname']";
         this.lastNameInput = "//input[@name='lastname']";
         this.emailInput = "//input[@name='email']";
         this.telephoneInput = "//input[@name='telephone']";
+        this.newPasswordInput = "//input[@name='password']";
+        this.newPasswordConfirmInput = "//input[@name='confirm']";
     }
     generateRandomNumber(minimum: number, maximum: number) {
         minimum = Math.ceil(minimum);
@@ -19,16 +23,16 @@ export default class MyAccount {
 
     async modifyFirstName(firstname: string) {
         await this.page.fill(this.firstNameInput, "");
-        await this.page.type(this.firstNameInput, firstname, { delay: 50 })
+        await this.page.type(this.firstNameInput, firstname, { delay: 100 })
     }
-    getFirstName(){
+    getFirstName() {
         return this.page.locator(this.firstNameInput).getAttribute('value');
     }
     async modifyLastName(lastname: string) {
-        await this.page.fill(this.firstNameInput, "");
-        await this.page.type(this.lastNameInput, lastname, { delay: 50 })
+        await this.page.fill(this.lastNameInput, "");
+        await this.page.type(this.lastNameInput, lastname, { delay: 100 })
     }
-    getLastName(){
+    getLastName() {
         return this.page.locator(this.lastNameInput).getAttribute('value');
     }
     async modifyEmail(email: string) {
@@ -46,7 +50,25 @@ export default class MyAccount {
         Promise.all([
             this.page.click("//input[@value='Continue']")
         ]);
-
-
     }
+
+    async inputNewPassword(newPassword: string){
+        await this.page.fill(this.newPasswordInput, "");
+        await this.page.type(this.newPasswordInput, newPassword, {delay: 50});
+    }
+
+    async inputNewPasswordConfirm(newPassword: string){
+        await this.page.fill(this.newPasswordConfirmInput, "");
+        await this.page.type(this.newPasswordConfirmInput, newPassword, {delay: 50});
+    }
+
+
+
+    async changePassword(newPassword : string){
+        this.inputNewPassword(newPassword);
+        this.inputNewPasswordConfirm(newPassword);
+        this.clickContinueToRegister();
+    }
+
+
 }

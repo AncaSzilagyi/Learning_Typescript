@@ -28,11 +28,13 @@ export default class LoginPage {
         return (Math.floor(Math.random()*(maximum-minimum+1))+minimum).toString();
 
     }
-    // todo to put all the general function in another class
+    // todo to put all the general functions in another class
     async login(email: string, password: string) {
         await this.enterEmail(email);
         await this.enterLoginPassword(password);
-        await this.clickLoginBtn();
+        // await this.clickLoginBtn();
+        await this.page.click("//input[@value='Login']");
+
     }
     async enterEmail(email: string) {
         await this.page.type(this.emailInputLocator, email, { delay: 50 })
