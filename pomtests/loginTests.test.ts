@@ -39,15 +39,5 @@ test.describe("Login tests", async () => {
         await expect(page.locator("//div[@class='alert alert-danger alert-dismissible']")).toHaveText(" Warning: No match for E-Mail Address and/or Password.");
     })
 
-    // test("Edit account info | test_02", async ({ page, baseURL }) => {
-    //     const login = new LoginPage(page);
-    //     console.log(email);
-    //     await page.goto(`${baseURL}route=account/login`);
-    //     await login.login(email, password);
-    //     await login.clickEditAccountBtn();
-
-    // })
-
-
 })
 
