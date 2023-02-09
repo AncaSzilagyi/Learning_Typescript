@@ -29,7 +29,7 @@ test.describe("Login tests", async () => {
         expect(await page.locator(login.getEmailLocator()).getAttribute('placeholder')).toEqual("E-Mail Address");
         expect(await page.locator(login.getPasswordLocator()).getAttribute('placeholder')).toEqual("Password");
     })
-    test("Login with invalid password | test_02", async ({ page, baseURL }) => {
+    test("Login with invalid password | test_04", async ({ page, baseURL }) => {
         const login = new LoginPage(page);
         const randomPassword = "test" + login.generateRandomNumber(3, 100);
         await page.goto(`${baseURL}route=account/login`);
