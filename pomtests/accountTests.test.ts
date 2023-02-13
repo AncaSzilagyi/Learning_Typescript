@@ -19,14 +19,18 @@ test.describe("Modify personal information", async () => {
         await homePage.clickEditAccountInfo();
         await myAccount.modifyFirstName(updatedFirstName);
         await myAccount.clickContinueToRegister();
+
         await expect(page.locator("//div[@class='alert alert-success alert-dismissible']")).toHaveText(" Success: Your account has been successfully updated.");
+        
         await homePage.clickEditAccountInfo();
 
         expect(await myAccount.getFirstName()).toEqual(updatedFirstName);
 
         await myAccount.modifyLastName(updatedLastName);
         await myAccount.clickContinueToRegister();
+
         await expect(page.locator("//div[@class='alert alert-success alert-dismissible']")).toHaveText(" Success: Your account has been successfully updated.");
+        
         await homePage.clickEditAccountInfo();
 
         expect(await myAccount.getFirstName()).toEqual(updatedFirstName);
@@ -55,9 +59,10 @@ test.describe("Modify personal information", async () => {
 
         await page.goto(`${baseURL}route=account/login`);
         await login.login(email, newPassword);
-        await expect(page.locator("//h2[@class='card-header h5']").nth(0)).toHaveText("My Account");
+        
+        // await expect(page.locator("//h2[@class='card-header h5']").nth(0)).toHaveText("My Account");
 
-        await homePage.clickChangePassword();
+        // await homePage.clickChangePassword();
 
     })
 

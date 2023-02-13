@@ -13,27 +13,27 @@ export default class LoginPage {
         this.passwordInputLocator = "//input[@name='password']";
 
     }
-    getLoginTitleBox(){
+    getLoginTitleBox() {
         return this.loginTitleLocator;
     }
-    getEmailLocator(){
+    getEmailLocator() {
         return this.emailInputLocator;
     }
-    getPasswordLocator(){
+    getPasswordLocator() {
         return this.passwordInputLocator;
     }
-    generateRandomNumber(minimum: number, maximum: number){
+    generateRandomNumber(minimum: number, maximum: number) {
         minimum = Math.ceil(minimum);
         maximum = Math.floor(maximum);
-        return (Math.floor(Math.random()*(maximum-minimum+1))+minimum).toString();
+        return (Math.floor(Math.random() * (maximum - minimum + 1)) + minimum).toString();
 
     }
     // todo to put all the general functions in another class
     async login(email: string, password: string) {
         await this.enterEmail(email);
         await this.enterLoginPassword(password);
-        // await this.clickLoginBtn();
-        await this.page.click("//input[@value='Login']");
+        await this.clickLoginBtn();
+        // await this.page.click("//input[@value='Login']");
 
     }
     async enterEmail(email: string) {
@@ -48,7 +48,7 @@ export default class LoginPage {
 
     async clickLoginBtn() {
         await Promise.all([
-            this.page.waitForNavigation(),
+            this.page.waitForNavigation({ waitUntil: 'networkidle' }),
             await this.page.click("//input[@value='Login']")
         ])
     }
