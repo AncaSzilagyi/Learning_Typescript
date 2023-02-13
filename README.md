@@ -63,3 +63,7 @@ let value = await promise;
 The code is written with the help of [this tutorial from LambdaTest](https://youtu.be/wawbt1cATsk).
 
 Also, here is [Playwright official documentation](https://playwright.dev/docs/intro).
+
+Useful articles:
+- [Why Static Typing & Why is TypeScript so popular?](https://www.section.io/engineering-education/typescript-static-typing/)
+- [Difference between TypeScript and JavaScript](https://www.geeksforgeeks.org/difference-between-typescript-and-javascript/)
